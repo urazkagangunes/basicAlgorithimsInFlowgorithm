@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-24 11:51:02 &#214;&#214;"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNDsxMDowNDo0NCDDlsOWOzI5MDA="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNDsxMTo1MTowMiDDlsOWOzE7MzAwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, y, z" type="Integer" array="False" size=""/>
+            <input variable="i"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <if expression="i &lt; y">
+                <then>
+                    <if expression="y &gt; z">
+                        <then>
+                            <output expression="y &amp; &quot;en buyuk sayi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="z &amp; &quot; en buyuk sayi&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="i &gt; z">
+                        <then>
+                            <output expression="i &amp; &quot;en buyuk&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="z &amp; &quot;en buyuk&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

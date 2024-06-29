@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-25 11:38:37 &#214;&#214;"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTsxMTozMTozMiDDlsOWOzI4OTk="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTsxMTozODozNyDDlsOWOzE7MzAxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="faktoriyel, i, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sonuc" expression="1"/>
+            <output expression="&quot;Faktoriyel hesab&#305; yapmak istedi&#287;iniz say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="faktoriyel"/>
+            <for variable="i" start="1" end="faktoriyel " direction="inc" step="1">
+                <assign variable="sonuc" expression="sonuc * i"/>
+            </for>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

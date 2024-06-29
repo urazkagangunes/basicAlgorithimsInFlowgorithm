@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-25 11:10:56 &#214;&#214;"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTswOTo1NzoyMCDDlsOWOzI5MTE="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTsxMToxMDo1NiDDlsOWOzI7MzAxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="enBuyuk, i" type="Integer" array="False" size=""/>
+            <declare name="dizi" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i &amp; &quot;.&quot; &amp; &quot;de&#287;eri giriniz&quot;" newline="True"/>
+                <input variable="dizi[i]"/>
+            </for>
+            <assign variable="enBuyuk" expression="dizi[0]"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="dizi[i] &gt; enBuyuk">
+                    <then>
+                        <assign variable="enBuyuk" expression="dizi[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="enBuyuk" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-25 03:56:50 &#214;S"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTswMzo0MTo0NiDDllM7Mjc3NQ=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTswMzo1Njo1MCDDllM7MTsyODg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dizi" type="Integer" array="True" size="5"/>
+            <declare name="i, j, temp" type="Integer" array="False" size=""/>
+            <assign variable="temp" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <input variable="dizi[i]"/>
+            </for>
+            <for variable="j" start="0" end="4" direction="inc" step="1">
+                <for variable="i" start="0" end="3" direction="inc" step="1">
+                    <if expression="dizi[i] &gt; dizi[i+1]">
+                        <then>
+                            <assign variable="temp" expression="dizi[i]"/>
+                            <assign variable="dizi[i]" expression="dizi[i+1]"/>
+                            <assign variable="dizi[i+1]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="dizi[i] &amp; &quot;,&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

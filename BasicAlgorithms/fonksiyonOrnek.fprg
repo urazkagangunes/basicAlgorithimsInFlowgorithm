@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-25 02:02:39 &#214;S"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTswMTo0MzoyNCDDllM7Mjc3MQ=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNTswMjowMjozOSDDllM7MTsyODgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, toplam" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="toplam" expression="faktoriyel(sayi)"/>
+        </body>
+    </function>
+    <function name="faktoriyel" type="Integer" variable="toplam">
+        <parameters>
+            <parameter name="sayi" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="1"/>
+            <if expression="sayi != 0 || sayi != 0">
+                <then>
+                    <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                        <assign variable="toplam" expression="toplam * i"/>
+                    </for>
+                    <output expression="toplam" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-06-24 04:03:47 &#214;S"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNDswMzo0OTowMyDDllM7Mjc3NQ=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNjZFNkxOSUU7MjAyNC0wNi0yNDswNDowMzo0NyDDllM7MTsyODgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, sonuc" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="1" direction="inc" step="1">
+                <for variable="j" start="0" end="10" direction="inc" step="1">
+                    <output expression="i * j" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
